@@ -5,19 +5,45 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 	
-	var numeroDividendo;
+	/*var Resultado;
 
-	var numeroDivisor;
+	Resultado = 2 % 10;
 
-	numeroDividendo = document.getElementById('numeroDividendo').value;
+	alert(Resultado);
 
-	numeroDivisor = document.getElementById("numeroDivisor").value;
+	Resultado = 10 % 2;
 
-	alert(("El resto es") + (" ") + ((numeroDividendo) / (numeroDivisor))); 
+	alert(Resultado);*/	
+
+	var dividendo;
+
+	var divisor;
+
+	var resultado;
+ 
+	dividendo = document.getElementById('numeroDividendo').value;
+
+	divisor = document.getElementById("numeroDivisor").value;
+ 
+	dividendo = parseInt(dividendo);
+
+	divisor = parseInt(divisor);
+
+	resultado = dividendo % divisor;
+
+	alert("El resto es " + resultado);
 
 
+	/*Coloque 
+	
+	dividendo = parseInt(dividendo);
 
+	divisor = parseInt(divisor);
 
+	pero no es necesario pasar a numero dado que es una cuenta, aunque en el ejercisio se pide. Tambien se puede colocar adelante
+	de document.get pero se debe respetar lo que el enunciado dice.
+	
+	*/
 
 
 
