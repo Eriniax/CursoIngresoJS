@@ -59,27 +59,16 @@ function Materiales ()
 
 
 {
-
-	var largo;
-
-	var ancho;
-
-	var superficie;
-
-	largo = document.getElementById("Largo").value;
-
-	ancho = document.getElementById("Ancho").value;
+	var largo = document.getElementById('Largo').value;
+	var ancho = document.getElementById('Ancho').value;
 
 	largo = parseInt(largo);
-
 	ancho = parseInt(ancho);
 
-	superficie = (largo * ancho);
+	var bolsasCal = (largo)*(ancho)*3;
+	var bolsasCemento = (largo)*(ancho)*2;
 
-	superficie = parseInt(superficie);
-
-	alert("Se necesitan" + " " + (superficie*largo) +" " + "bolsas de cemento y" + " " + (superficie*ancho) + " " + "bolsas de cal");
-
+	alert("Se requieren " + bolsasCemento + " bolsas de cemento y " + bolsasCal+" de cal.");
 
 
 }
